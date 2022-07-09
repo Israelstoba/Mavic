@@ -360,13 +360,14 @@ img {
 ////// ALL WEBSITE MEDIA QUERY STYLE RULES
 
 //////MEDIA QUERY FOR CONTACT US ANIMATION
-@media screen and (max-width: 885px) {
+@media screen and (min-width: 885px) {
   @keyframes big-circle-anim {
     0% {
       transform: translateY(0%);
     }
+
     50% {
-      transform: translateY(-250%);
+      transform: translateY(-200%);
     }
 
     100% {
@@ -379,11 +380,19 @@ img {
       transform: translateX(0%);
     }
     50% {
-      transform: translateX(-480%);
+      transform: translateX(-535%);
     }
 
     100% {
       transform: translateX(0%);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-product {
+    .col-4 {
+      flex-basis: 100%;
     }
   }
 }
