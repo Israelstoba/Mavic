@@ -227,7 +227,7 @@ img {
 }
 
 .section-txt {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
@@ -407,6 +407,18 @@ img {
   padding: 0.7rem 1.2rem;
   background-color: var(--clr-extra-light);
   outline: 2px solid var(--clr-light);
+}
+
+.call-us-cta {
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.call-us-cta:hover {
+  background-color: var(--clr-light-primary);
+  color: var(--clr-white);
 }
 
 @media screen and (min-width: 885px) {
