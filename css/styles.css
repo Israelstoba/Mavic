@@ -392,7 +392,7 @@ img {
 .input-field {
   display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 8px;
   border: none;
   color: var(--txt-paragraph);
@@ -400,10 +400,11 @@ img {
   margin-bottom: 1rem;
   -webkit-transition: padding 0.5s;
   transition: padding 0.5s;
+  font-size: 1.2rem;
 }
 
 .input-field:focus {
-  padding: 0.6rem 1.1rem;
+  padding: 0.7rem 1.2rem;
   background-color: var(--clr-extra-light);
   outline: 2px solid var(--clr-light);
 }
