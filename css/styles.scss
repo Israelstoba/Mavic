@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+// CUSTOM CSS VIARIABLE
+:root {
+  --clr-primary: #4e944f;
+  --txt-paragraph: #555;
+  --clr-light-primary: #83bd75;
+  --clr-light: #b4e197;
+  --clr-extra-light: #e9efc0;
+  --clr-ascent: #fed700;
+  --clr-white: #fff;
+  --clr-dark: #1d1d1d;
+  --shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-paragraph);
+}
+
+p {
+  color: var(--txt-paragraph);
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.375rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-2,
+.col-3,
+.col-4 {
+  margin-bottom: 3.125rem;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  text-align: center;
+
+  img {
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+  }
+}
+.col-4 {
+  flex-basis: 25%;
+  min-width: 200px;
+  height: 250px;
+  padding: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3.125rem;
+  transition: transform 0.5s;
+
+  img {
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+//////// GENERAL BUTTON STYLE RULE START
+.btn {
+  width: 150px;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 2rem;
+  color: var(--clr-white);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-primary {
+  background-color: var(--clr-primary);
+  &:hover {
+    background-color: var(--clr-light-primary);
+  }
+}
+
+//////// GENERAL BUTTON STYLE RULE END
+
+// NAVIGATION BAR STYLE RULE STARTS
+.navigation-bar {
+  background: #fff;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 1000;
+}
+.navigation {
+  flex: 1;
+  text-align: right;
+}
+
+.navigation ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--clr-light-primary);
+}
+
+// NAVIGATION BAR STYLE RULES ENDS
+
+// HERO SECTION STYLE RULES STARTS
+
+.hero-container {
+  width: 100% !important;
+  .hero-bg {
+    width: 100%;
+  }
+}
+// HERO SECTION STYLE RULES ENDS
+
+// OVERALL CONTAINER STYLE RULES STARTS
+.main-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 1.5625rem;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px;
+}
+// OVERALL CONTAINER STYLE RULES ENDS
+
+// SECTIONS STYLE RULE START
+.section-title {
+  font-size: 1.6rem;
+  color: var(--clr-primary);
+  text-align: center;
+  margin-top: 4.375rem;
+  position: relative;
+  line-height: 60px;
+
+  &::after {
+    content: "";
+    background-color: var(--clr-ascent);
+    width: 80px;
+    height: 6px;
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.product-name {
+  color: var(--txt-paragraph);
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 600;
+}
+
+// SECTIONS STYLE RULE END
+
+////////EXCLUSIVE OFFER SECTION START
+
+.exclusive-offer {
+  background-color: var(--clr-extra-light);
+}
+
+.big-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.section-txt {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+////////EXCLUSIVE OFFER SECTION END
+
+/////// WHY CHOOSE US STYLE RULE START
+
+.why {
+  background-color: var(--clr-white);
+  padding-bottom: 3rem;
+
+  .row {
+    text-align: center;
+    .col-4 {
+      transform: none;
+    }
+  }
+}
+.why-icon {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+  position: relative;
+  transition: color 0.5s;
+  transition: transform 0.5s;
+
+  &:hover {
+    color: var(--clr-light-primary);
+    transform: rotate(-10deg);
+  }
+}
+
+.why-txt {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+/////// WHY CHOOSE US STYLE RULE END
+
+//////CONTACT US PAGE STYLE RULE START
+
+.contact-us {
+  background-color: var(--clr-light);
+
+  .col-2 {
+    position: relative;
+  }
+}
+@keyframes big-circle-anim {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes small-circle-anim {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-320%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.big-circle-anim {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  animation: big-circle-anim infinite 10s ease-in-out;
+}
+.small-circle-anim {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 70%;
+  // animation-delay: 50s;
+  animation: small-circle-anim 10s infinite ease-in-out;
+}
+
+.form-group {
+  min-width: 300px;
+  max-width: 500px;
+  background-color: var(--clr-white);
+  padding: 3rem 1rem;
+  border-radius: 8px;
+}
+
+.get-in-touch {
+  color: var(--clr-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  width: 100%;
+  padding: 1rem;
+
+  textarea {
+    margin-bottom: 3rem;
+  }
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  color: var(--txt-paragraph);
+  background-color: var(--clr-light);
+  margin-bottom: 1rem;
+  transition: padding 0.5s;
+
+  &:focus {
+    padding: 0.6rem 1.1rem;
+    background-color: var(--clr-extra-light);
+    outline: 2px solid var(--clr-light);
+  }
+}
+////// CONTACT US PAGE STYLE RULE END
+
+////// ALL WEBSITE MEDIA QUERY STYLE RULES
+
+//////MEDIA QUERY FOR CONTACT US ANIMATION
+@media screen and (max-width: 885px) {
+  @keyframes big-circle-anim {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-250%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes small-circle-anim {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-480%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
