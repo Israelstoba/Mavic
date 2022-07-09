@@ -31,6 +31,10 @@ a {
   color: var(--txt-paragraph);
 }
 
+li {
+  list-style-type: none;
+}
+
 p {
   color: var(--txt-paragraph);
 }
@@ -111,6 +115,7 @@ img {
   margin-bottom: 2rem;
   color: var(--clr-white);
   cursor: pointer;
+  font-weight: normal;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
@@ -272,6 +277,7 @@ img {
 
 .contact-us {
   background-color: var(--clr-light);
+  padding-bottom: 4rem;
 }
 
 .contact-us .col-2 {
@@ -418,6 +424,32 @@ img {
 
 .call-us-cta:hover {
   background-color: var(--clr-light-primary);
+  color: var(--clr-white);
+}
+
+.footer {
+  background-color: var(--clr-dark);
+  color: var(--txt-paragraph);
+  padding: 3rem 2rem 4rem;
+  text-align: center;
+}
+
+.social-icon-list {
+  display: inline-block;
+  margin: 1rem 2rem;
+}
+
+.icons {
+  color: var(--clr-white);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.icons:hover {
+  color: var(--clr-light-primary);
+}
+
+.social-title {
   color: var(--clr-white);
 }
 
