@@ -7,16 +7,16 @@ menuClose.style.maxHeight = "0px";
 
 function menutoggle() {
   if (menuOpen.style.maxHeight == "0px") {
-    menuOpen.style.maxHeight = "500px";
+    menuOpen.style.maxHeight = "550px";
   } else {
     menuOpen.style.maxHeight = "0px";
   }
 }
 
 function menutoggle() {
-  if (menuClose.style.maxHeight == "500px") {
+  if (menuClose.style.maxHeight == "550px") {
     menuClose.style.maxHeight = "0px";
   } else {
-    menuOpen.style.maxHeight = "500px";
+    menuOpen.style.maxHeight = "550px";
   }
 }
