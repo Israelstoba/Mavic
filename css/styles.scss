@@ -112,13 +112,32 @@ img {
 //////// GENERAL BUTTON STYLE RULE END
 
 // NAVIGATION BAR STYLE RULE STARTS
+.brand {
+  padding: 0;
+  margin: 0;
+}
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  display: none;
+}
+
+.menu-close {
+  width: 30px;
+  display: none;
+}
+
 .navigation-bar {
   background: #fff;
   box-shadow: var(--shadow);
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
+  padding: 1rem;
   position: relative;
   z-index: 1000;
 }
@@ -128,9 +147,9 @@ img {
 }
 
 .navigation ul {
-  display: inline-block;
   list-style-type: none;
-  margin-top: 2rem;
+  // margin-top: 2rem;
+  display: inline-block;
 }
 
 .navigation ul li {
@@ -208,6 +227,10 @@ img {
 
 .exclusive-offer {
   background-color: var(--clr-extra-light);
+
+  .col-2 {
+    padding: 2rem;
+  }
 }
 
 .big-title {
@@ -215,7 +238,7 @@ img {
   font-weight: 900;
   color: var(--clr-primary);
   line-height: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 0 2rem;
 }
 
 .section-txt {
@@ -316,7 +339,6 @@ img {
   position: absolute;
   top: 0;
   left: 70%;
-  // animation-delay: 50s;
   animation: small-circle-anim 10s infinite ease-in-out;
 }
 
@@ -401,6 +423,48 @@ img {
 //////FOOTER STYLE RULE END
 
 ////// ALL WEBSITE MEDIA QUERY STYLE RULES
+
+////// MOBILE RESPONSIVE MENU START
+@media only screen and(max-width:800px) {
+  .menu-close,
+  .menu-icon {
+    display: block;
+    width: 30px;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 35px;
+    right: 3rem;
+  }
+
+  .navigation ul {
+    position: fixed;
+    background-color: var(--clr-dark);
+    top: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .navigation ul li {
+    display: block;
+    margin: 2rem 3rem;
+  }
+
+  .li-home {
+    margin-top: 6rem !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navigation ul {
+    margin-top: 2rem;
+  }
+}
+
+////// MOBILE RESPONSIVE MENU END
 
 //////MEDIA QUERY FOR CONTACT US ANIMATION
 @media screen and (min-width: 885px) {
