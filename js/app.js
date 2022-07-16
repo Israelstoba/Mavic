@@ -20,3 +20,28 @@ function menutoggle() {
     menuOpen.style.maxHeight = "550px";
   }
 }
+
+////////Quantity increament and decreament
+
+var quantity = document.getElementById("quantity");
+
+var increment = 0;
+var decrement = 0;
+
+function qtyIncrement() {
+  decrement = 1;
+  increment += +1;
+  quantity.value = increment + 1;
+}
+
+function qtyDecrement() {
+  increment += -1;
+  decrement = increment + 1;
+  quantity.value = decrement;
+  /////to avoid nagatives quantity values
+  if (quantity.value <= 0) {
+    quantity.value = 1;
+    increment = 0;
+    decrement = 0;
+  }
+}

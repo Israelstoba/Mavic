@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mavic product details page</title>
+    <!-- FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS EXTERNAL LINK -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="brand">
+        <img src="images/mavic logo.png" width="125px" />
+      </div>
+      <img
+        src="images/menu.png"
+        class="menu-icon"
+        onclick="menutoggle()"
+        alt=""
+      />
+      <div class="navigation">
+        <ul id="menu-toggler">
+          <li class="li-home"><a href="index.html">Home</a></li>
+          <img
+            src="images/Menu-close.png"
+            alt=""
+            onclick="menutoggle()"
+            class="menu-close"
+            id="menu-toggler"
+          />
+        </ul>
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="product-details">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/mc-french fries.jpg" alt="" />
+            </div>
+            <div class="col-2">
+              <h2 class="big-product-name">French fries</h2>
+              <p class="price single-product-price">₦800</p>
+              <!-- <label for="quantity">Quantity</label> -->
+              <button class="minus-btn quantity-btn" onclick="qtyDecrement()">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <input type="text" class="quantity" id="quantity" value="1" />
+              <!-- <h2 class="quantity" id="quantity">1</h2> -->
+              <button class="plus-btn quantity-btn" onclick="qtyIncrement()">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <br />
+              <a href="#" class="btn btn-primary add-to-cart-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add to cart
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main-product similar-product">
+        <h3 class="section-subtitle">Similar product you may also like</h3>
+        <div class="small-container product-details-col-4">
+          <div class="row product-details-row">
+            <div class="col-4">
+              <a href="#">
+                <img src="images/mc-french fries.jpg" />
+                <h4 class="product-name">French fries</h4>
+                <p class="price">₦800</p>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="#">
+                <img src="images/mc-chicken.jpg" />
+                <h4 class="product-name">Chicken</h4>
+                <p class="price">₦1200</p>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="#">
+                <img src="images/mc-samosa.jpg" />
+                <h4 class="product-name">Samosa</h4>
+                <p class="price">₦450 (5 pcs)</p>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="#">
+                <img src="images/mc-spring roll.jpg" />
+                <h4 class="product-name">Spring roll</h4>
+                <p class="price">₦450 (5 pcs)</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="footer">
+      <div class="#">
+        <div class="social-container">
+          <ul class="social-list-group">
+            <h4 class="social-title">Stay Connected</h4>
+            <li class="social-icon-list">
+              <a href=""><i class="fa-brands fa-facebook fa-2x icons"></i></a>
+            </li>
+            <li class="social-icon-list">
+              <a href=""><i class="fa-brands fa-twitter fa-2x icons"></i></a>
+            </li>
+            <li class="social-icon-list">
+              <a href=""><i class="fa-brands fa-instagram fa-2x icons"></i></a>
+            </li>
+            <p class="copyright">
+              &copy Mavic kitchen and confectionary 2022, built by Israel Stoba.
+            </p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -116,6 +116,13 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.cart-icon {
+  color: var(--clr-light-primary);
+  font-size: 1.575rem;
+  margin: 1rem 3rem 0 0;
+}
+
 .menu-icon {
   width: 30px;
   height: 30px;
@@ -422,6 +429,66 @@ img {
 }
 //////FOOTER STYLE RULE END
 
+//////////// Single product details page ////////////
+.similar-product {
+  padding-bottom: 3rem;
+}
+
+.product-details-row {
+  margin-top: 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--clr-primary);
+  margin: 2rem auto 0px;
+}
+.big-product-name {
+  color: var(--clr-primary);
+}
+
+.add-to-cart-btn {
+  display: block;
+  margin-top: 2rem;
+  width: 180px;
+  text-align: center;
+}
+.single-product-price {
+  margin-bottom: 1rem;
+}
+.quantity {
+  width: 4.5rem;
+  padding: 5px;
+  border: 2px solid var(--clr-primary);
+  margin: 0 10px;
+  text-align: center;
+  color: var(--txt-paragraph);
+  font-weight: 600;
+
+  &:focus {
+    outline: var(--clr-primary);
+  }
+}
+// .col-2 label {
+//   font-weight: 600;
+//   color: var(--clr-primary);
+// }
+
+.quantity-btn {
+  // padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--clr-primary);
+  border: none;
+  color: var(--clr-white);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--clr-light-primary);
+  }
+}
+
 ////// ALL WEBSITE MEDIA QUERY STYLE RULES
 
 ////// MOBILE RESPONSIVE MENU START
@@ -430,6 +497,12 @@ img {
   .menu-icon {
     display: block;
     width: 30px;
+  }
+  .cart-icon {
+    position: absolute;
+    top: 1.35rem;
+    right: 6rem;
+    margin-right: 0;
   }
 
   .menu-close {
@@ -446,6 +519,7 @@ img {
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
+    z-index: 1000;
   }
 
   .navigation ul li {
