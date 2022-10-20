@@ -43,6 +43,14 @@ img {
   max-width: 100%;
 }
 
+.cart-btn {
+  width: 100%;
+  padding: 0.3rem 2rem;
+  text-align: center;
+  border-radius: 6px;
+  color: var(--clr-white);
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -77,7 +85,7 @@ img {
   height: 250px;
   padding: 15px;
   margin-top: 2rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 5.125rem;
   transition: transform 0.5s;
 
   img {
@@ -226,6 +234,7 @@ img {
 
 .price {
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 // SECTIONS STYLE RULE END
@@ -429,7 +438,7 @@ img {
 }
 //////FOOTER STYLE RULE END
 
-//////////// Single product details page ////////////
+//////////// Single product details page start ////////////
 .similar-product {
   padding-bottom: 3rem;
 }
@@ -469,10 +478,6 @@ img {
     outline: var(--clr-primary);
   }
 }
-// .col-2 label {
-//   font-weight: 600;
-//   color: var(--clr-primary);
-// }
 
 .quantity-btn {
   // padding: 10px;
@@ -488,6 +493,96 @@ img {
     background-color: var(--clr-light-primary);
   }
 }
+////////////Single product details page end ///////////////
+
+/////////cart page start
+.cart-section {
+  text-align: center;
+  .cart-header {
+    background-color: var(--clr-primary);
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .cart-row {
+    width: 100%;
+  }
+
+  .col-3 {
+    h4 {
+      font-weight: bold;
+    }
+    font-weight: bold;
+    img {
+      width: 100px;
+      height: 100px;
+      text-align: left;
+    }
+  }
+
+  .cart-quantity-input {
+    width: 40px;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 6px;
+    border: 3px solid var(--clr-primary);
+  }
+
+  .remove-btn {
+    width: auto;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .cart-total-container {
+    margin: 0 0 0 auto;
+    padding-right: 6rem;
+    .cart-total-price,
+    .cart-total-title {
+      margin-left: 1rem;
+      margin-right: 0.7rem;
+    }
+  }
+
+  .place-order-btn {
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .col-3 {
+      flex-basis: 30%;
+      min-width: 70px;
+      text-align: center;
+
+      img {
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+      }
+    }
+
+    .cart-total-container {
+      margin: 0 auto;
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    .cart-quantity-input,
+    .remove-btn {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+/////////cart page end
 
 ////// ALL WEBSITE MEDIA QUERY STYLE RULES
 
