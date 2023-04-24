@@ -79,7 +79,7 @@ for (var i = 0; i < linkBtns.length; i++) {
     message.value = productName;
 
     proceedBtn.addEventListener('click', () => {
-      var waUrl = `https://wa.me/+2348056101383?text= Product Name: ${productName} %0a Name: ${customerName.value} %0a Phone: ${customerNumber.value} %0a Address: ${customerAddress.value}. %0a I will like to place an order for the above item`;
+      var waUrl = `https://wa.me/+2348056101383?text= Product Name: ${productName} %0a Name: ${customerName.value} %0a Phone: ${customerNumber.value} %0a Address: ${customerAddress.value}. %0a %0a I will like to place an order for the above item`;
       window.open(waUrl, '_blank', focus()); // this opens a new browser tab
       // window.open(waUrl, '_blank', 'focus'); // this opens a new browser window
     });
