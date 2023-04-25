@@ -132,12 +132,6 @@ img {
   margin: 0;
 }
 
-.cart-icon {
-  color: var(--clr-light-primary);
-  font-size: 1.575rem;
-  margin: 1rem 3rem 0 0;
-}
-
 .menu-icon {
   width: 30px;
   height: 30px;
@@ -240,7 +234,7 @@ img {
   position: fixed;
   inset: 0;
   opacity: 0;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-light);
   pointer-events: none;
   z-index: 800;
 }
@@ -344,12 +338,16 @@ img {
 .why {
   background-color: var(--clr-white);
   padding-bottom: 3rem;
+  padding-top: 4rem;
 }
 .why .row {
   text-align: center;
 }
 .why .row .col-4 {
   transform: none;
+}
+.why .big-title {
+  text-align: center;
 }
 
 .why-icon {
@@ -368,6 +366,10 @@ img {
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--clr-primary);
+}
+
+.about-title {
+  margin-bottom: 4rem;
 }
 
 .contact-us {
@@ -503,12 +505,6 @@ img {
   .menu-icon {
     display: block;
     width: 30px;
-  }
-  .cart-icon {
-    position: absolute;
-    top: 1.35rem;
-    right: 6rem;
-    margin-right: 0;
   }
   .menu-close {
     position: absolute;

@@ -139,12 +139,6 @@ img {
   margin: 0;
 }
 
-.cart-icon {
-  color: var(--clr-light-primary);
-  font-size: 1.575rem;
-  margin: 1rem 3rem 0 0;
-}
-
 .menu-icon {
   width: 30px;
   height: 30px;
@@ -261,7 +255,7 @@ img {
   position: fixed;
   inset: 0;
   opacity: 0;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-light);
   pointer-events: none;
   z-index: 800;
 }
@@ -372,12 +366,18 @@ img {
 .why {
   background-color: var(--clr-white);
   padding-bottom: 3rem;
+  padding-top: 4rem;
 
   .row {
     text-align: center;
     .col-4 {
       transform: none;
     }
+  }
+
+  .big-title {
+    text-align: center;
+
   }
 }
 .why-icon {
@@ -391,6 +391,7 @@ img {
     color: var(--clr-light-primary);
     transform: rotate(-10deg);
   }
+
 }
 
 .why-txt {
@@ -398,6 +399,11 @@ img {
   font-weight: 600;
   color: var(--clr-primary);
 }
+
+.about-title {
+  margin-bottom: 4rem;
+}
+
 /////// WHY CHOOSE US STYLE RULE END
 
 //////CONTACT US PAGE STYLE RULE START
@@ -548,12 +554,6 @@ img {
   .menu-icon {
     display: block;
     width: 30px;
-  }
-  .cart-icon {
-    position: absolute;
-    top: 1.35rem;
-    right: 6rem;
-    margin-right: 0;
   }
 
   .menu-close {

@@ -20,5 +20,6 @@
     "titleBar.inactiveBackground": "#fed70099",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#fed700"
+  "peacock.color": "#fed700",
+  "liveSassCompile.settings.showOutputWindowOn": "Debug"
 }
