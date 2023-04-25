@@ -1,4 +1,24 @@
 {
   "js/ts.implicitProjectConfig.strictFunctionTypes": false,
-  "js/ts.implicitProjectConfig.strictNullChecks": false
+  "js/ts.implicitProjectConfig.strictNullChecks": false,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#ffe032",
+    "activityBar.background": "#ffe032",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#009f87",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#ffe032",
+    "statusBar.background": "#fed700",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#cbac00",
+    "statusBarItem.remoteBackground": "#fed700",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#fed700",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#fed70099",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#fed700"
 }
